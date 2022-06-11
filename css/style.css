@@ -1,0 +1,60 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  margin: 16px 0 16px 0;
+}
+
+.navigations-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigations-list__item {
+  margin-right: 27px;
+}
+
+.navigations-list__link {
+  color: #000000;
+}
+
+.header-order__buttons-measuring {
+  background-color: #EF7F04;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 13px;
+  padding: 10px 18px;
+  margin-right: 14px;
+}
+
+.header-order__buttons-calculation {
+  background: #3B3A63;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 13px;
+  padding: 10px 18px;
+}
+
+.header-order__span {
+  margin-right: 9px;
+}
+
+.navigations-list__link:hover {
+  color: #EF7F04;
+  border-top: 4px solid #EF7F04;
+  padding-top: 36px;
+}
+/*# sourceMappingURL=style.css.map */
