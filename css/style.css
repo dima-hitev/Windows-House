@@ -1,9 +1,13 @@
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.header-block {
+.header {
+  background: #FFFFFF;
+}
+
+.header .header-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,24 +18,20 @@
       -ms-flex-align: center;
           align-items: center;
   height: 65px;
-  margin: 16px 0 16px 0;
+  margin: 17px 0 17px 0;
 }
 
-.navigations-list {
+.header .header-block .navigations-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navigations-list__item {
+.header .header-block .navigations-list__item {
   margin-right: 27px;
 }
 
-.navigations-list__link {
-  color: #000000;
-}
-
-.header-order__buttons-measuring {
+.header .header-order__buttons-measuring {
   background-color: #EF7F04;
   border-radius: 3px;
   color: #FFFFFF;
@@ -40,7 +40,7 @@
   margin-right: 14px;
 }
 
-.header-order__buttons-calculation {
+.header .header-order__buttons-calculation {
   background: #3B3A63;
   border-radius: 3px;
   color: #FFFFFF;
@@ -52,9 +52,98 @@
   margin-right: 9px;
 }
 
+.navigations-list__link {
+  color: #000000;
+}
+
 .navigations-list__link:hover {
   color: #EF7F04;
   border-top: 4px solid #EF7F04;
   padding-top: 36px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title-sections {
+  text-align: center;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2F2F51;
+}
+
+.services {
+  background-color: #f2f2f2;
+  padding-top: 70px;
+}
+
+.services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-list .card__item {
+  width: 49%;
+  background-size: cover;
+  border-radius: 3px;
+  margin-bottom: 25px;
+  padding: 55px 0 38px 50px;
+}
+
+.services-list .card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.services-list .card__header-title {
+  margin-left: 20px;
+  width: 220px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2F2F51;
+}
+
+.services-list .card__descriptions {
+  width: 270px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2F2F51;
+}
+
+.card__item_window {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/window.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/window.jpg);
+}
+
+.card__item_bolcony {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/balcony.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/balcony.jpg);
+}
+
+.card__item_house {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/house.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/house.jpg);
+}
+
+.card__item_object {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/object.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/object.jpg);
 }
 /*# sourceMappingURL=style.css.map */

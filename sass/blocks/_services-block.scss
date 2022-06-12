@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+.title-sections {
+  text-align: center;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: $text;
+}
+
+.services {
+  background-color: $gray;
+  padding-top: 70px;
+  
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .card__item {
+      width: 49%;
+      background-size: cover;
+      border-radius: 3px;
+      margin-bottom: 25px;
+      padding: 55px 0 38px 50px;
+      }
+
+    .card__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+
+      &-title {
+        margin-left: 20px;
+        width: 220px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $text;
+      }
+    }
+
+    .card__descriptions {
+      width: 270px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $text;
+    }
+  }
+}
+
+.card__item_window {
+  background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/window.jpg);
+}
+
+.card__item_bolcony {
+  background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/balcony.jpg);
+}
+
+.card__item_house {
+  background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/house.jpg);
+}
+
+.card__item_object {
+  background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/object.jpg);
+}
