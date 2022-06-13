@@ -78,7 +78,8 @@
 
 .services {
   background-color: #f2f2f2;
-  padding-top: 70px;
+  padding-top: 68px;
+  padding-bottom: 93px;
 }
 
 .services-list {
@@ -93,10 +94,10 @@
 }
 
 .services-list .card__item {
-  width: 49%;
+  width: calc(50% - 5px);
   background-size: cover;
   border-radius: 3px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   padding: 55px 0 38px 50px;
 }
 
@@ -127,23 +128,23 @@
   color: #2F2F51;
 }
 
-.card__item_window {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/window.jpg);
-  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/window.jpg);
+.card__item_background-window {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/services/window.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/window.jpg);
 }
 
-.card__item_bolcony {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/balcony.jpg);
-  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/balcony.jpg);
+.card__item_background-balcony {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/services/balcony.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/balcony.jpg);
 }
 
-.card__item_house {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/house.jpg);
-  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/house.jpg);
+.card__item_background-house {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/services/house.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/house.jpg);
 }
 
-.card__item_object {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/object.jpg);
-  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/object.jpg);
+.card__item_background-object {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFFFF), to(rgba(255, 255, 255, 0))), url(/images/services/object.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/object.jpg);
 }
 /*# sourceMappingURL=style.css.map */
