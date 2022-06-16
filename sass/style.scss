@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
-  font-family: 'Roboto';
+.list {
+  text-decoration: none;
 }
-@import './base/variables';
-@import './blocks/header-block';
-@import './blocks/services-block';
+
+.list:hover {
+  color: #ffc107;
+  border-top: 4px solid #ffc107;
+  padding-top: 32px;
+}
