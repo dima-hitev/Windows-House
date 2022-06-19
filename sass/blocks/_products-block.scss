@@ -1,0 +1,83 @@
+.products {
+  background-color: $gray;
+  padding-bottom: 54px;
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+
+    &__link {
+      padding: 10px 25px;
+      margin-right: 10px;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 18px;
+      color: $text;
+      line-height: 21px;
+    }
+
+    &__link:hover {
+      color: $white;
+      background-color: $orange;
+    }
+  }
+
+  &-card {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      width: 47.2%;
+      background-color: $white;
+      border-radius: 3px;
+
+      .products-card__title {
+        padding: 65px 34px 45px 34px;
+
+        &-classification {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 42px;
+          color: $orange;
+          margin-bottom: 40px;
+        }
+
+        .produsts-card__descriptions {
+          width: 280px;
+          font-weight: 400;
+          line-height: 19px;
+          color: $text;
+          margin-bottom: 40px;
+        }
+
+        .products-card__specifications-item {
+          font-weight: 700;
+
+          .border-dotted {
+            display: inline-block;
+            border-bottom: 2px dotted $gray;
+            height: 40px;
+            width: 260px;
+          }
+
+          .border-dotted_width-one {
+            width: 260px;
+          }
+
+          .border-dotted_width-two {
+            width: 238px;
+          }
+
+          .border-dotted_width-three {
+            width: 311px;
+          }
+
+          .border-dotted_width-four {
+            width: 222px;
+          }
+        }
+      }
+    }
+  }
+}

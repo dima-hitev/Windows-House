@@ -15,7 +15,7 @@
   background-color: $gray;
   padding-top: 68px;
   padding-bottom: 93px;
-  
+
   &-list {
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,22 @@
       border-radius: 3px;
       margin-bottom: 10px;
       padding: 55px 0 38px 50px;
+      }
+
+      .card__item_background-window {
+        background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/window.jpg);
+      }
+
+      .card__item_background-balcony {
+        background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/balcony.jpg);
+      }
+
+      .card__item_background-house {
+        background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/house.jpg);
+      }
+
+      .card__item_background-object {
+        background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/object.jpg);
       }
 
     .card__header {
@@ -47,25 +63,8 @@
     .card__descriptions {
       width: 270px;
       font-weight: 400;
-      font-size: 16px;
       line-height: 19px;
       color: $text;
     }
   }
-}
-
-.card__item_background-window {
-  background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/window.jpg);
-}
-
-.card__item_background-balcony {
-  background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/balcony.jpg);
-}
-
-.card__item_background-house {
-  background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/house.jpg);
-}
-
-.card__item_background-object {
-  background-image: linear-gradient(to right, $white 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/object.jpg);
 }
