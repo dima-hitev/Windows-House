@@ -29,11 +29,11 @@
 
       &__advantage {
         display: flex;
-        align-items: center;
         justify-content:space-between;
 
         &-icon {
           margin-bottom: 20px;
+          height: 86px;
         }
 
         &-description {
