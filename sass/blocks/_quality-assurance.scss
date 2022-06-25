@@ -1,0 +1,55 @@
+.quality {
+  padding-bottom: 96px;
+  background-color: $gray;
+
+  &-top {
+    background-image: url(/images/quality/quality-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 36px 0 70px 0;
+    margin-bottom: 56px;
+
+    &__title {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-around;
+
+      .item {
+        text-align: center;
+
+        &__icon {
+          height: 96px;
+          margin-bottom: 40px;
+        }
+
+        &__description {
+          font-weight: 400;
+          line-height: 19px;
+          color: $white;
+          width: 195px;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 18px 36px;
+    background: $purple;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    line-height: 19px;
+    color: $white;
+
+    &-icon {
+      margin-right: 22px;
+    }
+  }
+}
