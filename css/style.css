@@ -18,10 +18,28 @@ body {
   height: 65px;
   margin: 17px 0 17px 0;
 }
+@media screen and (max-width: 992px) {
+  .header-block {
+    justify-content: space-evenly;
+  }
+}
+.header-block__burger-menu {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .header-block__burger-menu {
+    display: block;
+  }
+}
 .header-block .navigations-list {
   display: flex;
   font-weight: 400;
   line-height: 19px;
+}
+@media screen and (max-width: 992px) {
+  .header-block .navigations-list {
+    display: none;
+  }
 }
 .header-block .navigations-list__item {
   margin-right: 27px;
@@ -71,23 +89,44 @@ body {
   line-height: 28px;
   color: #2F2F51;
 }
+@media screen and (max-width: 992px) {
+  .title-sections {
+    margin-bottom: 29px;
+  }
+}
 
 .services {
   background-color: #f2f2f2;
-  padding-top: 68px;
-  padding-bottom: 93px;
+  padding: 68px 0 83px 0;
+}
+@media screen and (max-width: 992px) {
+  .services {
+    padding: 47px 0 0 0;
+  }
 }
 .services-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 992px) {
+  .services-list {
+    justify-content: center;
+  }
+}
 .services-list .card__item {
   width: calc(50% - 5px);
   background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 3px;
   margin-bottom: 10px;
   padding: 55px 0 38px 50px;
+}
+@media screen and (max-width: 992px) {
+  .services-list .card__item {
+    width: 60%;
+    margin-bottom: 40px;
+  }
 }
 .services-list .card__item_background-window {
   background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/window.jpg);
@@ -204,6 +243,11 @@ body {
 .windows-house .main-info .left {
   padding: 60px 52px 0 85px;
 }
+@media screen and (max-width: 992px) {
+  .windows-house .main-info .left {
+    width: 75%;
+  }
+}
 .windows-house .main-info .left__title {
   font-weight: 100;
   font-size: 36px;
@@ -232,6 +276,11 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 992px) {
+  .windows-house .main-info .right {
+    display: none;
+  }
 }
 .windows-house .main-info .right__feedback {
   background-color: #FFFFFF;

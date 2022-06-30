@@ -9,24 +9,41 @@
   font-size: 24px;
   line-height: 28px;
   color: $text;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 29px;
+  }
 }
 
 .services {
   background-color: $gray;
-  padding-top: 68px;
-  padding-bottom: 93px;
+  padding: 68px 0 83px 0;
+
+  @media screen and (max-width: 992px) {
+    padding: 47px 0 0 0;
+  }
 
   &-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+    }
+
     .card__item {
       width: calc(50% - 5px);
       background-size: cover;
+      background-repeat: no-repeat;
       border-radius: 3px;
       margin-bottom: 10px;
       padding: 55px 0 38px 50px;
+
+      @media screen and (max-width: 992px) {
+        width: 60%;
+        margin-bottom: 40px;
+      }
       }
 
       .card__item_background-window {
