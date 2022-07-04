@@ -25,57 +25,50 @@
 
   &-card {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
-    &__item {
-      width: 47.2%;
+    .left {
+      width: 50%;
+
+      &__images {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+      }
+    }
+
+    .right {
+      padding: 74px 40px 52px;
       background-color: $white;
+      width: 50%;
       border-radius: 3px;
 
-      .products-card__title {
-        padding: 65px 34px 45px 34px;
+      &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: $orange;
+        margin-bottom: 40px;
+      }
 
-        &-classification {
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 42px;
-          color: $orange;
-          margin-bottom: 40px;
-        }
+      &__descriptions {
+        width: 280px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $text;
+        margin-bottom: 40px;
+      }
 
-        .produsts-card__descriptions {
-          width: 280px;
-          font-weight: 400;
-          line-height: 19px;
-          color: $text;
-          margin-bottom: 40px;
-        }
+      &__specifications-item {
+        font-weight: 700;
+        display: flex;
+        align-items: baseline;
+        line-height: 40px;
 
-        .products-card__specifications-item {
-          font-weight: 700;
-
-          .border-dotted {
-            display: inline-block;
-            border-bottom: 2px dotted $gray;
-            height: 40px;
-            width: 260px;
-          }
-
-          .border-dotted_width-one {
-            width: 260px;
-          }
-
-          .border-dotted_width-two {
-            width: 238px;
-          }
-
-          .border-dotted_width-three {
-            width: 311px;
-          }
-
-          .border-dotted_width-four {
-            width: 222px;
-          }
+        .border-dotted {
+          border-bottom: 2px dotted $gray;
+          flex-grow: 1;
         }
       }
     }

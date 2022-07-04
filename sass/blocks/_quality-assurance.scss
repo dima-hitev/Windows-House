@@ -2,12 +2,22 @@
   padding-bottom: 96px;
   background-color: $gray;
 
+  @media screen and (max-width: 992px) {
+    padding-bottom: 38px;
+  }
+
   &-top {
     background-image: url(/images/quality/quality-fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 36px 0 70px 0;
+    border-radius: 3px;
+    padding: 36px 0 70px;
     margin-bottom: 56px;
+
+    @media screen and (max-width: 992px) {
+      padding: 36px 0 0;
+      margin-bottom: 29px;
+    }
 
     &__title {
       text-align: center;
@@ -17,9 +27,18 @@
     &__list {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 992px) {
+        justify-content: space-evenly;
+      }
 
       .item {
         text-align: center;
+
+        @media screen and (max-width: 992px) {
+          margin-bottom: 70px;
+        }
 
         &__icon {
           height: 96px;
@@ -30,7 +49,7 @@
           font-weight: 400;
           line-height: 19px;
           color: $white;
-          width: 195px;
+          width: 222px;
         }
       }
     }
@@ -43,7 +62,6 @@
     padding: 18px 36px;
     background: $purple;
     border-radius: 3px;
-    font-family: 'Roboto';
     font-weight: 700;
     line-height: 19px;
     color: $white;

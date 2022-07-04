@@ -1,6 +1,10 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+  @media screen and (max-width: 992px) {
+    margin: 0 56px;
+  }
 }
 
 .header {
@@ -13,22 +17,22 @@
     height: 65px;
     margin: 17px 0 17px 0;
 
-    @media screen and (max-width: 992px) {
-      justify-content: space-evenly;
-    }
+    &__menu {
+      display: flex;
+      justify-content: left;
 
-    &__burger-menu {
-      display: none;
-
-      @media screen and (max-width: 992px) {
-        display: block;
+      &-burger {
+        display: none;
+  
+        @media screen and (max-width: 992px) {
+          display: block;
+          margin-right: 40px;
+        }
       }
     }
 
     .navigations-list {
       display: flex;
-      font-weight: 400;
-      line-height: 19px;
 
       @media screen and (max-width: 992px) {
         display: none;
@@ -39,6 +43,8 @@
       }
 
       &__link {
+        font-weight: 400;
+        line-height: 19px;
         color: $black;
       }
 
@@ -54,7 +60,6 @@
         background-color: $orange;
         border-radius: 3px;
         color: $white;
-        font-family: 'Roboto';
         font-size: 13px;
         font-weight: 700;
         line-height: 15px;
@@ -66,7 +71,6 @@
         background: $purple;
         border-radius: 3px;
         color: $white;
-        font-family: 'Roboto';
         font-size: 13px;
         font-weight: 700;
         line-height: 15px;

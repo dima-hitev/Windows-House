@@ -6,15 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Окна хаус</title>
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="header-block">
-        <img src="./images/header/burger-menu.svg" alt="" class="header-block__burger-menu">
 
-        <img src="./images/header/logo.svg" alt="">
+        <div class="header-block__menu">
+          <img src="./images/header/burger-menu.svg" alt="" class="header-block__menu-burger">
+
+          <img src="./images/header/logo.svg" alt="" class="header-block__logo-icon">
+        </div>
 
         <nav class="navigations">
           <ul class="navigations-list">
@@ -189,41 +195,39 @@
 
       <div class="products-card">
 
-        <div class="products-card__item">
-          <img src="./images/procucts/products.jpg" alt="" class="products-card__images">
+        <div class="products-card__left left">
+          <img src="./images/procucts/products.jpg" alt="" class="left__images">
         </div>
 
-        <div  class="products-card__item">
-          <div class="products-card__title">
+        <div  class="products-card__right right">
 
-            <h3 class="products-card__title-classification">Rehau Blitz New</h3>
+            <h3 class="right__title">Rehau Blitz New</h3>
 
-            <p class="produsts-card__descriptions">Сохраняют тепло в доме, защищают то шума и вписываются в любой интерьер. Практичный выбор</p>
+            <p class="right__descriptions">Сохраняют тепло в доме, защищают то шума и вписываются в любой интерьер. Практичный выбор</p>
 
-            <div class="products-card__specifications-item">
-              <span class="products-card__specifications-title">Cистемная глубина</span>
-                <span class="border-dotted border-dotted_width-one"></span>
-              <span class="products-card__specifications-value">60/60 мм</span>
+            <div class="right__specifications-item">
+              <span class="right__specifications-title">Cистемная глубина</span>
+                <span class="border-dotted"></span>
+              <span class="right__specifications-value">60/60 мм</span>
             </div>
 
-            <div class="products-card__specifications-item">
-              <span class="products-card__specifications-title">Ширина стеклопакета</span>
-                <span class="border-dotted border-dotted_width-two"></span>
-              <span class="products-card__specifications-value">24/31 мм</span>
+            <div class="right__specifications-item">
+              <span class="right__specifications-title">Ширина стеклопакета</span>
+                <span class="border-dotted"></span>
+              <span class="right__specifications-value">24/31 мм</span>
             </div>
 
-            <div class="products-card__specifications-item">
-              <span class="products-card__specifications-title">Воздушные камеры</span>
-                <span class="border-dotted border-dotted_width-three"></span>
-              <span class="products-card__specifications-value">3</span>
+            <div class="right__specifications-item">
+              <span class="right__specifications-title">Воздушные камеры</span>
+                <span class="border-dotted"></span>
+              <span class="right__specifications-value">3</span>
             </div>
 
-            <div class="products-card__specifications-item">
-              <span class="products-card__specifications-title">Теплосопротивление</span>
-                <span class="border-dotted border-dotted_width-four"></span>
-              <span class="products-card__specifications-value">0,70 м2С/ВТ</span>
+            <div class="right__specifications-item">
+              <span class="right__specifications-title">Теплосопротивление</span>
+                <span class="border-dotted"></span>
+              <span class="right__specifications-value">0,70 м2С/ВТ</span>
             </div>
-          </div>
 
         </div>
       </div>
@@ -285,5 +289,120 @@
       </button>
     </div>
   </section>
+
+  <section class="about">
+    <div class="container">
+      <h2 class="title-sections">
+        О компании
+      </h2>
+
+      <ul class="about-list">
+        <li class="about-list__item">
+          <a class="about-list__link" href="">Описание</a>
+        </li>
+        <li class="about-list__item">
+          <a class="about-list__link" href="">Как мы работаем</a>
+        </li>
+        <li class="about-list__item">
+          <a class="about-list__link" href="">Отзывы</a>
+        </li>
+        <li class="about-list__item">
+          <a class="about-list__link" href="">Сертификаты</a>
+        </li>
+      </ul>
+
+      <div class="about-card">
+        <div class="about-card__left left">
+          <img src="./images/about/logo.svg" alt="" class="left__logo">
+
+          <p class="left__description">Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p>
+        </div>
+
+        <div class="about-card__right right">
+          <img src="./images/about/fon.jpg" alt="" class="right__images">
+        </div>
+      </div>
+
+      <div class="about-advantage">
+        <div class="about-advantage__item item">
+          <img src="./images/about/icon1.svg" alt="" class="item__icon">
+          <div class="item__block">
+            <div class="item__block-title">
+              ПРОФЕССИОНАЛИЗМ
+            </div>
+            <div class="item__block-description">
+              Бригада профессиональных мастеров по монтажу и обслуживанию
+            </div>
+          </div>
+        </div>
+
+        <div class="about-advantage__item item">
+          <img src="./images/about/icon2.svg" alt="" class="item__icon">
+          <div class="item__block">
+            <div class="item__block-title">
+              ЦЕНООБРАЗОВАНИЕ
+            </div>
+            <div class="item__block-description">
+              Лучшие цены на рынке пластиковых окон
+            </div>
+          </div>
+        </div>
+
+        <div class="about-advantage__item item">
+          <img src="./images/about/icon3.svg" alt="" class="item__icon">
+          <div class="item__block">
+            <div class="item__block-title">
+              МОБИЛЬНОСТЬ
+            </div>
+            <div class="item__block-description">
+              Заключение договора на дому
+            </div>
+          </div>
+        </div>
+
+        <div class="about-advantage__item item">
+          <img src="./images/about/icon4.svg" alt="" class="item__icon">
+          <div class="item__block">
+            <div class="item__block-title">
+              ЛОЯЛЬНОСТЬ
+            </div>
+            <div class="item__block-description">
+              99% клиентов рекомендуют нас своим друзьям
+            </div>
+          </div>
+        </div>
+
+        <div class="about-advantage__item item">
+          <img src="./images/about/icon5.svg" alt="" class="item__icon">
+          <div class="item__block">
+            <div class="item__block-title">
+              СКОРОСТЬ
+            </div>
+            <div class="item__block-description">
+              Короткие сроки установки изделий
+            </div>
+          </div>
+        </div>
+
+        <div class="about-advantage__item item">
+          <img src="./images/about/icon6.svg" alt="" class="item__icon">
+          <div class="item__block">
+            <div class="item__block-title">
+              СЛУЖБА КАЧЕСТВА
+            </div>
+            <div class="item__block-description">
+              Безупречное качествои контроль изделий ПВХ
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="about__button">
+        <img src="./images/about/button-icon.svg" alt="" class="about__button-icon">
+        Оформить заявку на замер
+      </button>
+    </div>
+  </section>
+
 </body>
 </html>
