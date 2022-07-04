@@ -11,6 +11,10 @@
     .left {
       padding: 60px 52px 0 85px;
 
+      @media screen and (max-width: 992px) {
+        width: 75%;
+      }
+
       &__title {
         font-weight: 100;
         font-size: 36px;
@@ -47,6 +51,9 @@
     }
 
     .right {
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
 
       &__feedback {
         background-color: $white;
