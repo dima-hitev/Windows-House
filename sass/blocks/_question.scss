@@ -1,0 +1,49 @@
+.questions {
+  background-color: $gray;
+
+  .container {
+    padding: 40px 100px 63px;
+    background-color: $orange;
+    border-radius: 7px;
+
+    @media screen and (max-width: 992px) {
+      padding: 40px 40px 63px;
+    }
+  }
+
+  &__tille {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $white;
+  }
+
+  &__answers {
+    &-block {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: $text;
+      margin-bottom: 14px;
+      border-radius: 3px;
+      padding:30px 20px;
+      background-color: $details;
+    }
+
+    &-block[open] {
+      line-height: 41px;
+      padding: 20px;
+    }
+
+    &-block:hover {
+      color: $orange;
+    }
+
+    &-title {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
