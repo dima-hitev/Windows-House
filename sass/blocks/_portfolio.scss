@@ -1,0 +1,28 @@
+.portfolio {
+  background-color: $gray;
+
+  @media screen and (max-width: 992px) {
+    background-color: $white;
+  }
+
+  .container {
+    padding: 48px 0 70px;
+    background-color: $white;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    .item {
+      margin-right: 44px;
+
+      @media screen and (max-width: 992px) {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
