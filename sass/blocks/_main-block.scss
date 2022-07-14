@@ -9,10 +9,17 @@
     padding-top: 69px;
 
     .left {
-      padding: 60px 52px 0 85px;
+      padding: 60px 48px 0 85px;
+      width: 54%;
 
       @media screen and (max-width: 992px) {
-        width: 75%;
+        width: 70%;
+        padding: 60px 30px 0 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 20px;
       }
 
       &__title {
@@ -22,12 +29,20 @@
         color: $white;
         margin-bottom: 20px;
 
+        @media screen and (max-width: 576px) {
+          font-size: 24px;
+        }
+
         &-color {
           font-weight: 700;
-          font-size: 24px;
+          font-size: 26px;
           line-height: 28px;
           color: $orange;
           display: block;
+
+          @media screen and (max-width: 576px) {
+            font-size: 18px;
+          }
         }
       }
 
@@ -35,22 +50,39 @@
         display: flex;
         justify-content:space-between;
 
+        @media screen and (max-width: 576px) {
+          display: block;
+          text-align: center;
+        }
+
         &-icon {
           margin-bottom: 20px;
           height: 86px;
+          width: 75px;
         }
 
         &-description {
-          width: 165px;
+          width: 130px;
           font-weight: 400;
           font-size: 14px;
           line-height: 18px;
           color: $white;
+          margin-right: 30px;
+
+          @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+          }
+
+          @media screen and (max-width: 576px) {
+            margin:0 auto 30px;
+          }
         }
       }
     }
 
     .right {
+      width: 45%;
+
       @media screen and (max-width: 992px) {
         display: none;
       }
@@ -58,8 +90,8 @@
       &__feedback {
         background-color: $white;
         border-radius: 10px;
-        width: 406px;
-        padding: 43px 43px 67px 40px;
+        max-width: 411px;
+        padding: 43px 40px 67px;
         text-align: center;
         position: relative;
 
@@ -83,13 +115,12 @@
             border-radius: 3px;
             padding-left: 16px;
             color: $text;
-          }
 
-          &__item::placeholder {
-            color: $placeholder;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 16px;
+            &::placeholder {
+              color: $placeholder;
+              font-weight: 400;
+              font-size: 14px;
+            }
           }
 
           &__checkbox {
@@ -110,24 +141,39 @@
               text-align: left;
               margin-left: 10px;
               width: 288px;
+
+              .input__checkbox-link {
+                color: $link;
+                transition: 0.5s;
+
+                &:hover {
+                  opacity: 0.6;
+                }
+              }
             }
           }
         }
 
-        .right__feedback-button {
+        &-button {
           padding: 19px 40px;
-          background: $orange;
+          background-color: transparent;
+          background-color: $orange;
           border-radius: 3px;
           font-weight: 700;
           font-size: 14px;
-          line-height: 16px;
           color: $white;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            opacity: 0.6;
+          }
         }
 
         &-images {
           position: absolute;
-          bottom: -53px;
-          left: -86px;
+          bottom: -8px;
+          left: -2px;
         }
       }
     }
