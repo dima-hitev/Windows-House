@@ -211,16 +211,16 @@ body * {
   }
 }
 .services-list .card__item_background-window {
-  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/window.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(../images/services/window.jpg);
 }
 .services-list .card__item_background-balcony {
-  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/balcony.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(../images/services/balcony.jpg);
 }
 .services-list .card__item_background-house {
-  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/house.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(../images/services/house.jpg);
 }
 .services-list .card__item_background-object {
-  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(/images/services/object.jpg);
+  background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url(../images/services/object.jpg);
 }
 .services-list .card__header {
   display: flex;
@@ -367,7 +367,7 @@ body * {
 }
 
 .windows-house {
-  background-image: url(/images/main/main-fon.jpg);
+  background-image: url(../images/main/main-fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 65px;
@@ -555,7 +555,7 @@ body * {
   }
 }
 .quality-top {
-  background-image: url(/images/quality/quality-fon.jpg);
+  background-image: url(../images/quality/quality-fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 3px;
